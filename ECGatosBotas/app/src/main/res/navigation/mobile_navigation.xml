@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_lista">
+
+    <fragment
+        android:id="@+id/navigation_lista"
+        android:name="pe.edu.idat.ec_gatos_botas.ListaGatosFragment"
+        android:label="Lista de Gatos"
+        tools:layout="@layout/fragment_lista_gatos" />
+
+    <fragment
+        android:id="@+id/navigation_favorito"
+        android:name="pe.edu.idat.ec_gatos_botas.FavoritoFragment"
+        android:label="Favorito"
+        tools:layout="@layout/fragment_favorito" />
+
+    <fragment
+        android:id="@+id/navigation_informacion"
+        android:name="pe.edu.idat.ec_gatos_botas.InformacionFragment"
+        android:label="Informacion"
+        tools:layout="@layout/fragment_informacion" />
+</navigation>
